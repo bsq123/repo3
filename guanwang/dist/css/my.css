@@ -1,0 +1,54 @@
+.container .icon{
+    text-align: center;
+    line-height: 30px;
+    color: #ffffff;
+
+}
+.container .icon:hover{
+    font-size: 18px;
+}
+/*.container .show{*/
+/*    width: 960px;*/
+/*    background-image: url(dist/img/zhanshi.png);*/
+/*}*/
+footer .words{
+    font-size: 12px;
+}
+.home .info div.download li{
+    text-align: center;
+    line-height: 60px;
+
+}
+.home .info div.download li:hover{
+    background-color: #3289ea;
+    color: #ffffff;
+
+}
+.home .info div.download li.issue2 {
+    background-image: url(../img/H5-2.png);
+}
+.col {
+    background-color: #fff;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+.overlay {
+    position: relative;
+}
+.overlay .contact2{
+    width: 400px;
+    height: auto;
+    background-color: #fff;
+    position: absolute;
+    top: 200px;
+    left:50%;
+    margin-left: -200px;
+    border-radius: 10px;
+    padding:30px;
+}
+
+

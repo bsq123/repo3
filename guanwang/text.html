@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>内容滑动与导航时时对应</title>
+</head>
+<link rel="stylesheet" href="../../script/bootstrap/dist/css/bootstrap.min.css">
+<script type="text/javascript" src="../../jquery-1.10.2.js"></script>
+<script type="text/javascript" src="mundo-test.js"></script>
+<style type="text/css">
+    .sidenav{
+        font-weight: bold !important;
+        color: red !important;
+        background: #0f0f0f !important;
+        display: inline-block;
+        height: 40px;
+        width: 100px;
+        margin-top: 20px;
+        font-size: 20px;
+        text-align: center;
+        padding-top: 6px;
+    }
+    .sidenav-first{
+        font-weight: normal;
+        color: #74aaf9;
+        background: #e8f2ff;
+        display: inline-block;
+        height: 40px;
+        width: 100px;
+        margin-top: 20px;
+        font-size: 20px;
+        text-align: center;
+        padding-top: 6px;
+    }
+    .test{
+        background: antiquewhite;
+        font-size: 18px;
+        color: blueviolet;
+        padding: 23px 50px;
+        margin-top: 20px;
+    }
+    p{
+        line-height: 40px;
+    }
+</style>
+<body>
+<div class="col-sm-2">
+    <div id="menu" style="position: fixed;">
+        <ul>
+            <li><a href="#test1" class="sidenav-first sidenav test1">首页</a></li>
+            <li><a href="#test2" class="sidenav-first test2">第一页</a></li>
+            <li><a href="#test3" class="sidenav-first test3">第二页</a></li>
+            <li><a href="#test4" class="sidenav-first test4">第三页</a></li>
+            <li><a href="#test5" id="test-last" class="sidenav-first test5">第四页</a></li>
+        </ul>
+    </div>
+</div>
+<div class="col-sm-10">
+    <div id="content">
+        <div class="test" id="test1">
+            <h1>首页</h1>
+            <p>
+                作曲 : 家家
+                作词 : 家家
+                编曲：家家
+                还有什么等待还有什么悲哀
+                这故事中的人不太精彩
+                夏去了又回来而人却已不在
+                它重复着我汹涌的忍耐
+                今年兰花又开开了它也会败
+                我想
+                把心慢慢的释怀
+
+                我知道从一开始随随便便深深浅浅
+                不过是爱的自由不计前嫌不知疲倦
+                永远太远走远遥远
+
+                不过是爱的自由不计前嫌不知疲倦
+                永远太远走远遥远
+                放开不再拖欠
+            </p>
+        </div>
+        <div class="test" id="test2">
+            <h1>第一页</h1>
+            <p>
+                作曲 : 李双飞
+                作词 : 施人诚
+
+                我好久没来这间餐厅
+                没想到已经换了装潢
+                角落那窗口闻的到玫瑰花香
+                被你一说是有些印象
+
+                我没有说谎我何必说谎
+                你知道的我缺点之一就是很健忘
+                我哪有说谎
+                是很感谢今晚的相伴
+                但我竟然有些不习惯
+                我知道从一开始随随便便深深浅浅
+                不过是爱的自由不计前嫌不知疲倦
+                永远太远走远遥远
+                放开不再拖欠oh
+
+                陪伴三个季节还是承受决裂
+                曾经是心心念念
+                随随便便深深浅浅
+                爱上了不语不言不计前嫌不知疲倦
+                向后向前遇见改变
+                那残破疲倦
+                永远太远走远遥远
+                放开不再拖欠
+            </p>
+        </div>
+        <div class="test" id="test3">
+            <h1>第二页</h1>
+            <p>
+                作曲 : 花粥
+                作词 : 姬霄
+                编曲/混音：马雨阳
+                劫过九重城
+
+                夙愿只隔一箭
+
+                黄昏下模糊的侧脸
+                遗忘了伤痛的少年
+
+            </p>
+        </div>
+        <div class="test" id="test4">
+            <h1>第三页</h1>
+            <p>
+                作曲 : 简弘亦
+                作词 : 海雷
+                编曲：丁培峰
+                不愿染是与非 怎料事与愿违
+                心中的花枯萎 时光它去不回
+                但愿洗去浮华 掸去一身尘灰
+                再与你一壶清酒 话一世沉醉
+                不愿染是与非 怎料事与愿违
+                心中的花枯萎 时光它去不回
+                一场回忆 生生灭灭 了了心扉
+                再回首浅尝心酒余味
+                一场回忆 生生灭灭 了了心扉
+                再回首浅尝心酒余味
+                作曲 : 脱景麟
+                作词 : 宜宝
+                编曲：冯聪
+                录音：冯聪/刘天鸿
+                混音：刘天鸿
+                母带 : 刘天鸿
+
+                秋天里的落叶挥手同树道别
+
+            </p>
+        </div>
+        <div style="margin-bottom: 500px;" class="test" id="test5">
+            <h1>第四页</h1>
+            <p>
+                作曲 : 刘伟锋
+                作词 : 刘伟锋
+                编曲：刘伟锋
+                录制混缩：巨人先生
+                出品：西亚斯音频工作室
+                企划：谭梦
+                发行公司：恬音文化
+                说好带你流
+                最后一句感谢还有多余的抱歉
+                奔跑在街上大雨淋湿的视线
+                反反复复的自我欺骗
+                再分开在之前
+                没有勇气想的更远
+                黄昏下模糊的侧脸
+                遗忘了伤痛的少年
+                有风险才蜕变
+                时间总会说出再见
+                曾经是心心念念随随便便深深浅浅
+                爱上了不语不言不计前嫌不知疲倦
+                向后向前遇见改变
+            </p>
+        </div>
+    </div>
+</div>
+<script>
+
+    $(document).ready(function () {
+        window.addEventListener("scroll", function(event) {
+            var scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
+            $(window).scroll(function () {
+                var top = $(document).scrollTop();          //定义变量，获取滚动条的高度
+                //var menu = $("#menu");                      //定义变量，抓取#menu
+                var items = $("#content").find(".test");    //定义变量，查找.item
+
+                var curId = "";                             //定义变量，当前所在的楼层item #id
+                items.each(function () {
+                    var m = $(this);                        //定义变量，获取当前类
+                    var mHeight = m.height();
+                    var itemsTop = m.offset().top;        //定义变量，获取当前类的top偏移量
+
+                    if (top >= itemsTop - mHeight/2) {
+                        curId = "#" + m.attr("id");
+                        if(curId == "#test5"){
+                            var menu = $("#menu");
+                            var curLink = menu.find(".sidenav");
+                            curLink.removeClass("sidenav");
+                            menu.find("[href='#test5']").addClass("sidenav");
+                        }else{
+                            //给相应的楼层设置cur,取消其他楼层的cur
+                            var menu = $("#menu");
+                            var curLink = menu.find(".sidenav");
+                            if (curId && curLink.attr("href") != curId) {
+                                curLink.removeClass("sidenav");
+                                menu.find("[href=" + curId + "]").addClass("sidenav");
+                            }
+                        }
+                    } else {
+                        return false;
+                    }
+                });
+            });
+        });
+    });
+
+
+    /*$('.button').on('click',function(){
+        var name = $('#name').val()
+        var phone = $('#phone').val()
+        var demand = $('#demand').val()
+        console.log("hahah")
+        $.ajax({
+            type:"post",
+            url:"",
+            data:$('form1').serialize(),
+            success:function(e){
+                console.log("成功")
+                return false
+            },
+            error:function(){
+                console.log("失败")
+                return false
+            }
+        })
+
+    })*/
+</script>
+</body>
+
+</html>
